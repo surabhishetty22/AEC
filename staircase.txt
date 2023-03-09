@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+int t,x,y,ans;
+cout<<"enter no of testcase \n";
+cin>>t;
+while(t--)
+{
+    cout<<"enter x and y \n";
+cin>>x>>y;
+ans=x/y;
+ans+=(x%y);
+cout<<"ans: \n"<<ans<<endl;
+}
+return 0;
+}

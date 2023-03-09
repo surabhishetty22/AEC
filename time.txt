@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+    int main()
+{
+int t,x,y,z,sum,d,ld;
+cout<<"enter testcase \n";
+cin>>t;
+while(t!=0)
+{
+cout<<"enter x,y,z \n";
+cin>>x>>y>>z;
+if(x<=3){
+sum=x*y;
+}else{
+ld=x%3;
+d=x/3;
+if(ld!=0){
+sum=(ld*y)+(d*3*y)+(d*z);
+}else{
+sum=(d*3*y)+((d-1)*z);
+}
+}
+cout<<sum<<endl;
+t--;
+}
+return 0;
+
+}

@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+int t,m,h,b;
+cout<<"no of testcase\n";
+cin >> t;
+while(t--){
+    cout<<"enter m and h value \n ";
+cin >> m>>h;
+b=m/(h*h);
+if(b<=18){
+cout <<"category:"<< 1 << endl;
+}
+else if(b>=19 && b<=24){
+cout <<"category:"<<  2 << endl;
+}
+else if(b>=25 && b<=29){
+cout <<"category:"<<  3 << endl;
+}
+else{
+cout <<"category:"<<  4 << endl;
+}
+}
+return 0;
+}
